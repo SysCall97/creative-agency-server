@@ -141,7 +141,6 @@ client.connect(err => {
     });
 
     app.patch('/update/:id', (req, res) => {
-        // console.log(req.params.id, req.body.newStatus);
 
         orderCollection.updateMany(
             {_id: ObjectId(req.params.id)},
